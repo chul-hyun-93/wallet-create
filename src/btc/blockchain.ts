@@ -1,4 +1,4 @@
-import * as ecc from "tiny-secp256k1";
+import * as ecc from "secp256k1";
 
 import crypto from "crypto";
 import bs58 from "bs58";
@@ -7,7 +7,7 @@ export function getPublicKeyFromPrivateKey(
   privateKey: Buffer,
   compressed: boolean = true,
 ): Buffer {
-  const result = ecc.pointFromScalar(privateKey, compressed);
+  const result = ecc.publicKeyCreate(privateKey, compressed);
 
   if (!result) {
     throw new Error("Invalid public key");
