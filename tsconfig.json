@@ -1,0 +1,26 @@
+{
+    "extends": "ts-node/node16/tsconfig.json",
+
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "useDefineForClassFields": true,
+        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "skipLibCheck": true,
+
+        "allowImportingTsExtensions": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+
+        "strict": true,
+        "esModuleInterop": true,
+        "noFallthroughCasesInSwitch": true,
+
+        "baseUrl": "."
+    },
+    "include": ["src"]
+}

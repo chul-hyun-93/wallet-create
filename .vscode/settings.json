@@ -1,0 +1,10 @@
+{
+    "notebook.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "github.copilot.enable": {
+        "*": "false"
+    },
+    "github.copilot.editor.enableAutoCompletions": false
+}
